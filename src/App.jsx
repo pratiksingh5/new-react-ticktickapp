@@ -116,7 +116,7 @@ function App() {
             <TickTickForm />
           </div>
           <div className="flex flex-wrap gap-y-3">
-            {tasks.map((task) => (
+            {tasks && tasks.lengh && tasks.map((task) => (
               <TaskItem task={task} id={task.id} />
             ))}
           </div>
